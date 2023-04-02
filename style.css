@@ -1,0 +1,31 @@
+.container {
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-areas: 
+    "cabecalho cabecalho cabecalho"
+    "links conteudo conteudo"
+    "links conteudo conteudo"
+    "links rodape rodape"
+    ;
+}
+
+.cabecalho {
+    background-color: chartreuse;
+   grid-area: cabecalho;
+}
+
+.conteudo {
+    background-color: yellow;
+   grid-area: conteudo;
+}
+
+.links {
+    background-color: blue;
+   grid-area: links;
+}
+
+.rodape {
+    background-color: crimson;
+    grid-area: rodape;
+}
